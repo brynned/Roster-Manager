@@ -1,0 +1,25 @@
+1	Jared Cornelius	WR Sr	5-11	212	Shreveport(LA)/EvangelChristianAcademy
+3	McTelvin Agim	DL So	6-3	289	Texarkana(TX)/Hope(AR)
+4	Alexy Jean-Baptiste	LB	R-Fr	6-2	231	PompanoBeach(FL)/CoconutCreek 
+4	Ty Storey	QB	So	6-2	212	Charleston(AR)/Charleston 
+5	Brandon Martin WR	So	6-4	215	Monroe(LA)/PrimeAcademy/MissippiGulfCoast 
+5	Henre’ Toliver	DB	Sr	6-1	185	Marrero(LA)/ArchbishopRummel 
+6	T.J. Hammonds	RB	So	5-10	197	Little Rock(AR)/JoeTRobinson 
+7	Briston Guidry	DL	R-Fr	6-3	294	Metairie(LA)/ArchbishopRummel 
+7	Jonathan Nance	WR	Jr	6-2	187	Gulfport(MI)/Gulfport(MI)/GulfCoast 
+8	Austin Allen	QB	Sr	6-1	209	Fayetteville(AR)/Fayetteville 
+8	De’Jon Harris	LB	So	6-0	255	Harvey(LA)/JohnEhret 
+9	Cole Hedlund	K	Jr	5-10	175	Argyle(TX)/Argyle 
+9	Santos Ramirez	DB	Jr	6-2	205	Shreveport(LA)/EvangelChristianAcademy
+10	Jordan Jones	WR	R-Fr	6-1	184	Smackover(AR)/Smackover 
+10	Randy Ramsey	DL	Jr	6-4	228	Fort-Lauderdale(FL)/Dillard 
+11	Daulton Hyatt	QB	Fr	6-4	180	Attalla(AL)/Etowah 
+11	Ryan Pulley	DB	Jr	5-11	198	Fort Myers(FL)/IslandCoast 
+13	Deon Stewart	WR	So	5-11	164	Hardy(AR)/Highland 
+13	Nate Dalton	DB	So	6-3	190	Baton Rouge(LA)/CypressFalls 
+14	Britto Tutt	DB	So	6-2	177	Augusta(GA)AcademyofRichmondCounty/VenturaCollege(CA)
+14	Carson Proctor	QB	R-Fr	6-4	211	Vero Beach(FL)/VeroBach 
+15	Cole Kelley	QB	R-Fr	6-7	258	Laayette(LA)/TeurlingsCatholic 
+15	Korey Hernandez	DB	Fr	5-10	170	Atlanta(GA)/CedarGrove 
+16	(LA) Michael Pettway	WR	So	6-2	216	Nashville(AR)/Nashville 
+17	Kofi Boateng	WR	R-Fr	6-1	183	Arlington(TX)/Lamar

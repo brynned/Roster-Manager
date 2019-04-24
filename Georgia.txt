@@ -1,0 +1,25 @@
+8 	Pat Allen 	OL	RS-SO	6-4	290	Reisterstown Md./Franklin
+97 	John Atkins 	N	SR	6-4	308	Thomson Ga./Thomson/Hargrave Military Academy
+18 	Deandre Baker 	CB	JR	5-11	180	Miami Fla./Miami Northwestern
+65 	Kendall Baker 	OT	JR	6-6	287	Atlanta Ga./Marist
+61 	Chris Barnes 	OL	SO	6-3	288	Leesburg Ga./Lee County
+94 	Michael Barnett 	OL/DT	RS-SO	6-4	304	Dorchester S.C./Woodland
+48 	Austin Beauchamp 	ILB	JR	6-1	230	Commerce Ga./Reinhart
+17 	Davin Bellamy 	OLB	SR	6-5	240	Chamblee Ga./Chamblee
+98 	Rodrigo Blankenship 	PK	RS-SO	6-1	191	Marietta Ga./Sprayberry
+83 	Jeb Blazevich 	TE	SR	6-5	242	Charlotte N.C./CharlotteChristian
+11 	Keyon Brown 	OLB	RS-JR	6-3	257	Wauchula Fla./HardeeCounty
+26 	Patrick Burke 	WR	RS-FR	6-3	197	Marietta Ga./Pope
+70 	Aulden Bynum 	OT/TE	SR	6-5	295	Valdosta Ga./ValwoodSchool
+7 	Lorenzo Carter 	OLB	SR	6-6	242	Norcross Ga./Norcross
+76 	Michail Carter 	DL	SO	6-3	295	Jackson Ga./Jackson
+45 	Reggie Carter 	ILB	SR	6-1	230	Snellville Ga./SouthGwinnett
+82 	Michael Chigbu 	WR	JR	6-2	213	New Orleans La./HolyCrossSchool
+27 	Nick Chubb 	TB	SR	5-10	228	Cedartown Ga./Cedartown
+52 	Tyler Clark 	DL	SO	6-4	305	Americus Ga./Americus-Sumter
+74 	Ben Cleveland 	OL	SO	6-6	340	Toccoa Ga./StephensCounty
+56 	John Courson 	SN	RS-JR	5-11	193	Athens Ga./NorthOconee
+97 	Will Cowart 	P	RS-JR	6-3	165	Warner Robins Ga./LaGrangeCollege
+30 	Tae Crowder 	ILB	RS-SO	6-3	228	Hamilton Ga./HarrisCounty
+91 	Michael D'Angola 	P	JR	6-2	196	Suwanee Ga./GeorgiaPerimeter
+35 	Aaron Davis 	CB	SR	6-1	189	Locust Grove Ga./Luella

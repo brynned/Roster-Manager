@@ -1,0 +1,85 @@
+1	Jared Cornelius	WR	Sr	5-11	212	Shreveport(LA)/Evangel Christian Academy
+3	McTelvin Agim	DL	So	6-3	289	Texarkana(TX)/Hope(AR)
+4	Alexy Jean-Baptiste	LB	R-Fr	6-2	231	Pompano Beach(FL)/Coconut Creek  
+4	Ty Storey	QB	So	6-2	212	Charleston(AR)/Charleston  
+5	Brandon Martin	WR	So	6-4	215	Monroe(LA)/Prime Academy/(MI) ssippi Gulf Coast  
+5	Henre’ Toliver	DB	Sr	6-1	185	Marrero(LA)/Archbishop Rummel  
+6	T.J. Hammonds	RB	So	5-10	197	Little Rock(AR)/Joe T. Robinson  
+7	Briston Guidry	DL	R-Fr	6-3	294	Metairie(LA)/Archbishop Rummel  
+7	Jonathan Nance	WR	Jr	6-2	187	Gulfport(MI)/Gulfport/(MI) Gulf Coast  
+8	Austin Allen	QB	Sr	6-1	209	Fayetteville(AR)/Fayetteville  
+8	De’Jon Harris	LB	So	6-0	255	Harvey(LA)/John Ehret  
+9	Cole Hedlund	K	Jr	5-10	175	Argyle(TX)/Argyle  
+9	Santos Ramirez	DB	Jr	6-2	205	Shreveport(LA)/Evangel Christian Academy
+10	Jordan Jones	WR	R-Fr	6-1	184	Smackover(AR)/Smackover  
+10	Randy Ramsey	DL	Jr	6-4	228	Fort-Lauderdale(FL)/Dillard  
+11	Daulton Hyatt	QB	Fr	6-4	180	Attalla(AL)/Etowah  
+11	Ryan Pulley	DB	Jr	5-11	198	Fort Myers(FL)/Island Coast  
+13	Deon Stewart	WR	So	5-11	164	Hardy(AR)/Highland  
+13	Nate Dalton	DB	So	6-3	190	Baton Rouge(LA)/Cypress Falls  
+14	Britto Tutt	DB	So	6-2	177	Augusta(GA)Academy of Richmond County/Ventura College (CA)
+14	Carson Proctor	QB	R-Fr	6-4	211	Vero Beach(FL)/Vero Bach  
+15	Cole Kelley	QB	R-Fr	6-7	258	Laayette(LA)/Teurlings Catholic  
+15	Korey Hernandez	DB	Fr	5-10	170	Atlanta(GA)/Cedar Grove  
+16	(LA) Michael Pettway	WR	So	6-2	216	Nashville(AR)/Nashville  
+17	Kofi Boateng	WR	R-Fr	6-1	183	Arlington(TX)/Lamar
+18	Blake Johnson	P	So	6-0	193	Long Beach(CA)/Los Alamitos  
+18	Jack Lindsey	QB	R-Fr	6-3	184	Fayetteville  (AR) 	Springdale  
+19	Giovanni (LA) rance	LB	R-Fr	6-1	255	New Orleans  (LA) 	Saint Augustine  
+19	River Warnock	WR	Jr	5-11	185	North Little Rock  (AR) 	North Little Rock   / Crowder College (Mo.)
+20	De’Andre Coley	DB	Sr	6-1	214	Miami  (FL) 	Northwestern  
+20	Troy Allison	WR	Jr	6-1	193	McGregor  (TX) McGregor  
+21	Devwah Whaley	RB	So	5-11	216	Beaumont  (TX) Central  
+22	Deon Edwards	DB	R-Fr	6-1	205	Clermont  (FL) 	(LA) e Minneola  
+22	Rawleigh Williams III	RB	Jr	5-10	226	Dallas  (TX) Bishop Lynch  
+23	Dre Greenlaw	LB	Jr	6-0	226	Fayetteville  (AR) 	Fayetteville  
+23	Maleek Williams	RB	Fr	6-0	230	Punta Gorda  (FL) 	Charlotte  
+24	Juan Day	RB	Jr	6-1	214	North Little Rock  (AR) 	North Little Rock  
+24	Ryder Lucas	DB	Jr	6-0	190	The Woodlands  (TX) College Park  
+25	Micahh Smith	DB	R-Fr	6-0	195	Marshall  (TX) Marshall  
+26	Justice Hobbs	RB	R-Fr.	5-10	220	Farmington  (AR) 	Farmington  
+28	Josh Liddell	DB	Sr	6-1	210	Pine Bluff  (AR) 	Dollarway Senior  
+30	Kevin Richardson II	DB	Sr	6-0	178	Jacksonville  (AR) 	Jacksonville  
+31	(CT) r McPherson	RB	Sr	5-7	208	The Woodlands  (TX) The Woodlands College Park  
+31	Grant Morgan	LB	R-Fr	5-11	22-	Greenwood  (AR) 	Greenwood  
+32	Dylan Calhoun	DB	Jr	5-10	185	Waxahachie  (TX) Waxahachie   / Utah
+32	Hayden Johnson	FB	So	6-3	248	Columbia  Mo.	Rock Bridge  
+33	Dee Walker	LB	R-Fr	6-2	208	Moultrie  (GA) 	Colquitt County  
+34	Kendrick Jackson	FB	Jr	6-1	255	Haynesville  (LA) 	Haynesville  
+34	Tyler Phillips	LB	So	6-1	232	North Little Rock  (AR) 	North Little Rock  
+35	Dwayne Eugene	LB	Sr	6-1	235	Marrero  (LA) 	Archbishop Rummel  
+36	Cory Hollowell	DB	Jr	6-2	202	Corona  (CA)  	Orange Lutheran  
+37	Devin Buckner	DB	So	5-10	190	Pine Bluff  (AR) 	White Hall  
+38	Blake Kern	TE	R-Fr	6-6	240	(LA) ar  (AR) 	(LA) ar  
+38	Reid Miller	DB	Jr	5-9	197	Hollidaysburg  Pa.	IMG Academy [(FL) ]
+39	Byron Keaton	DB	So	5-10	183	Camden  (AR) 	Fairview  
+40	Jamario Bell	TE	So	6-5	252	Junction City  (AR) 	Junction City  
+40	Kyrei Fisher	LB	Fr	6-2	235	Tulsa  (OK) 	Union  
+41	Austin Capps	DL	So	6-4	309	Star City  (AR) 	Star City  
+42	(CT) r Limpert	K	So	6-1	176	Allen  (TX) Allen  
+42	Jonathan Marshall	DL	R-Fr	6-4	299	Shepherd  (TX) Shepherd  
+43	George Madden	LS	So	6-1	230	Blanchard  (OK) 	Blanchard  
+44	Austin Cantrell	TE	So	6-4	269	Roland  (OK) 	Roland  
+45	Josh Harris	LB	Jr	5-10	239	Pine Bluff  (AR) 	Watson Chapel  
+46	Damani Carter	LB	So	6-0	241	Fayetteville  (AR) 	Fayetteville  
+49	Robert Decker	LS	Sr	6-0	249	Greenwich  (CT) 	Greenwich   / UConn
+50	Jake Raulerson	OL	Sr	6-4	301	Celina  (TX) Celina   / Texas
+51	Hjalte Froholdt	OL	Jr	6-4	318	Svendborg  Denmark	IMG Academy ((FL) )
+52	T.J. Smith	DL	So	6-3	285	Moultrie  (GA) 	Colquitt County  
+53	Ben Brasuell	LB	R-Fr	6-1	218	Benton  (AR) 	Benton  
+55	Jake Heinrich	OL	R-Fr	6-4	295	Urbandale  Iowa	Urbandale  
+57	Shane Clenin	OL	Fr	6-6	295	Festus  Mo.	Jefferson  
+60	Brian Wallace	OL	Jr	6-6	335	Florissant  Mo.	Christian Brothers College  
+61	Cooper Sone	OL	So	6-2	277	Fayetteville  (AR) 	Fayetteville  
+62	Johnny Gibson	OL	Jr	6-4	344	Dumas  (AR) 	Dumas  
+67	Tyler Hall	OL	R-Fr	6-4	296	Maumelle  (AR) 	Maumelle  
+68	Kirby Adcock	OL	Fr	6-5	300	Nashville  (AR) 	Nashville  
+69	Dylan Hays	OL	R-Fr	6-3	294	Little Rock  (AR) 	Little Rock Christian
+71	Jackson Hannah	OL	Jr	6-2	282	Bentonville  (AR) 	Bentonville  
+72	Frank Ragnow	OL	Sr	6-5	319	Victoria  Minn.	Chanhassen  
+73	Deion Malone	OL	Jr	6-3	296	Conway  (AR) 	Conway  
+74	Colton Jackson	OL	So	6-6	300	Conway  (AR) 	Conway  
+75	Zach Rogers	OL	Jr	6-1	306	Carrollton  (TX) Hebron  
+76	Paul Ramirez	OL	Sr	6-6	299	Rialto  (CA)  	Rialto   / San Bernardino Valley   ((CA)  )
+78	Bijhon Jackson	DL	Sr	6-2	335	El Dorado  (AR) 	El Dorado  
+78	Dalton Wagner	OL	Fr	6-9	330	Spring Grove  Ill.	Richmond Burton  

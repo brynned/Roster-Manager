@@ -17,10 +17,40 @@ class Athlete:
         self.home_state = home_state
         self.school = school
 
+
 menu_choice = 0
 roster_dict = dict()
 
-while menu_choice != 7:
+def displayRoster():
+    current = 0
+    for team_member in roster_dict:
+        print("Full Name: ", roster_dict[team_member].first_last)
+        print("Position: ", roster_dict[team_member].position)
+        print("Number: ", roster_dict[team_member].number)
+        print("Height: ", roster_dict[team_member].height)
+        print("Weight: ", roster_dict[team_member].weight)
+        print("Hometown: ", roster_dict[team_member].hometown)
+        print("State: ", roster_dict[team_member].home_state)
+        print("School: ", roster_dict[team_member].school)
+    if len(roster_dict) is 0:
+        print("The team roster is currently empty.")
+
+
+def positionChoice(position_choice, roster_dict):
+    for team_member in roster_dict:
+        #for position_choice in roster_dict:
+        #print("Test: ", roster_dict[position_choice].position)
+        if position_choice == roster_dict[team_member].position:
+            print ("Full Name: ", roster_dict[team_member].first_last)
+            print("Position: ", roster_dict[team_member].position)
+            print("Jersey Number: ", roster_dict[team_member].number)
+            print("Height: ", roster_dict[team_member].height)
+            print("Weight: ", roster_dict[team_member].weight)
+            print("Hometown: ", roster_dict[team_member].hometown)
+            print("State: ", roster_dict[team_member].home_state)
+            print("High School: ", roster_dict[team_member].school)
+    
+while menu_choice != 8:
     print("\n\nWelcome to the Team Roster Management System!")
     print("********************Main Menu********************")
     print("1. Display the Team Roster")
@@ -29,23 +59,24 @@ while menu_choice != 7:
     print("4. Edit Athlete Info")
     print("5. Save Data")
     print("6. Load Data")
-    print("7. Exit Program")
-
+    print("7. Display Athlete by Position")
+    print("8. Exit Program")
     menu_choice = int(input("Selection > "))
 
     if menu_choice == 1:
-        current = 0
-        for team_member in roster_dict:
-            print("Full Name: ", roster_dict[team_member].first_last)
-            print("Position: ", roster_dict[team_member].position)
-            print("Number: ", roster_dict[team_member].number)
-            print("Height: ", roster_dict[team_member].height)
-            print("Weight: ", roster_dict[team_member].weight)
-            print("Hometown: ", roster_dict[team_member].hometown)
-            print("State: ", roster_dict[team_member].home_state)
-            print("School: ", roster_dict[team_member].school)
-        if len(roster_dict) is 0:
-            print("The team roster is currently empty.")
+        displayRoster()
+        #current = 0
+        #for team_member in roster_dict:
+            #print("Full Name: ", roster_dict[team_member].first_last)
+            #print("Position: ", roster_dict[team_member].position)
+            #print("Number: ", roster_dict[team_member].number)
+            #print("Height: ", roster_dict[team_member].height)
+            #print("Weight: ", roster_dict[team_member].weight)
+            #print("Hometown: ", roster_dict[team_member].hometown)
+            #print("State: ", roster_dict[team_member].home_state)
+            #print("School: ", roster_dict[team_member].school)
+        #if len(roster_dict) is 0:
+            #print("The team roster is currently empty.")
     elif menu_choice == 2:
         print("Please enter the following information for the new athlete:\n")
         first_last = input("Full Name: ")
@@ -101,6 +132,21 @@ while menu_choice != 7:
         print("Loading data...")
         print("Data loaded successfully!")
     elif menu_choice == 7:
+        position_choice = input("Enter the position you would like to search: ")
+        positionChoice(position_choice, roster_dict)
+        #for team_member in roster_dict:
+            #if position_choice == roster_dict[team_member].position:       
+                #if roster_dict[position_choice].position == roster_dict[team_member].position:
+                #print ("Full Name: ", roster_dict[team_member].first_last)
+                #print("Position: ", roster_dict[position_choice].position)
+                #print("Jersey Number: ", roster_dict[position_choice].number)
+                #print("Height: ", roster_dict[position_choice].height)
+                #print("Weight: ", roster_dict[position_choice].weight)
+                #print("Hometown: ", roster_dict[position_choice].hometown)
+                #print("State: ", roster_dict[position_choice].home_state)
+                #print("High School: ", roster_dict[position_choice].school)
+        
+    elif menu_choice == 8:
         print("Exiting program.")
     else:
         print("Invalid menu choice. Please enter a valid option.")

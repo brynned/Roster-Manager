@@ -1,8 +1,9 @@
 roster_dict = dict()
 
 class Athlete:
-    def __init__(self, first_last, position, number, height, weight, hometown, home_state, school):
+    def __init__(self, first_last, year, position, number, height, weight, hometown, home_state, school):
         self.first_last = first_last
+        self.year = year
         self.position = position
         self.number = number
         self.height = height
@@ -13,10 +14,10 @@ class Athlete:
 
 def displayRoster():
     current = 0
-    print('{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format("Name", "Position", "Number", "Height", "Weight", "Hometown", "State", "School"))
+    print('{:<25s}{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format("Name", "Year", "Position", "Number", "Height", "Weight", "Hometown", "State", "School"))
     print("\n")
     for team_member in roster_dict: 
-        print('{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format(roster_dict[team_member].first_last, roster_dict[team_member].position, roster_dict[team_member].number, roster_dict[team_member].height, roster_dict[team_member].weight, roster_dict[team_member].hometown, roster_dict[team_member].home_state, roster_dict[team_member].school)) 
+        print('{:<25s}{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format(roster_dict[team_member].first_last, roster_dict[team_member].year, roster_dict[team_member].position, roster_dict[team_member].number, roster_dict[team_member].height, roster_dict[team_member].weight, roster_dict[team_member].hometown, roster_dict[team_member].home_state, roster_dict[team_member].school)) 
         #print("Full Name: ", roster_dict[team_member].first_last)
         #print("Position: ", roster_dict[team_member].position)
         #print("Number: ", roster_dict[team_member].number)
@@ -28,8 +29,8 @@ def displayRoster():
     if len(roster_dict) is 0:
         print("The team roster is currently empty.")
 
-def addAthlete(first_last, position, number, height, weight, hometown, home_state, school):
-    athlete_info = Athlete(first_last, position, number, height, weight, hometown, home_state, school)
+def addAthlete(first_last, year, position, number, height, weight, hometown, home_state, school):
+    athlete_info = Athlete(first_last, year, position, number, height, weight, hometown, home_state, school)
     roster_dict[first_last] = athlete_info
 
 def deleteAthlete(athlete_to_delete):
@@ -43,6 +44,7 @@ def editAthlete(athlete_to_edit):
         team_member = roster_dict[athlete_to_edit]
         print("Make changes to whichever field needs to be edited.")
         team_member.first_last = input("Enter the new name of the athlete: ")
+        team_member.year = input("New year: ")
         team_member.position = input("New position: ")
         team_member.number = input("New number: ")
         team_member.height = input("New height: ")
@@ -58,7 +60,7 @@ def editAthlete(athlete_to_edit):
 def saveFile(file_name, output):
     for first_last in roster_dict:
         team_member = roster_dict[first_last]
-        output.write(team_member.first_last+","+team_member.position+","+team_member.number+","+team_member.height+","+team_member.weight+","+team_member.hometown+","+team_member.home_state+","+team_member.school+"\n")
+        output.write(team_member.first_last+","+team_member.year+","+team_member.position+","+team_member.number+","+team_member.height+","+team_member.weight+","+team_member.hometown+","+team_member.home_state+","+team_member.school+"\n")
     output.close()
     print("Saving data...")
     print("Data saved!")
@@ -67,56 +69,61 @@ def loadFile(file_name, input_file):
     for line in input_file:
         line = line.strip()
         data = line.split(",")
-        member_info = Athlete(data[0],data[1],data[2],data[3],data[4],data[5],data[6],data[7])
+        member_info = Athlete(data[0],data[1],data[2],data[3],data[4],data[5],data[6],data[7],data[8])
         if member_info.first_last not in roster_dict:
             roster_dict[member_info.first_last]=member_info
     print("Loading data...")
     print("Data loaded successfully!")
 
 def nameChoice(x):
-    print('{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format("Name", "Position", "Number", "Height", "Weight", "Hometown", "State", "School")) 
+    print('{:<25s}{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format("Name", "Year", "Position", "Number", "Height", "Weight", "Hometown", "State", "School")) 
     for team_member in roster_dict:
         if x == roster_dict[team_member].first_last:
-            print('{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format(roster_dict[team_member].first_last, roster_dict[team_member].position, roster_dict[team_member].number, roster_dict[team_member].height, roster_dict[team_member].weight, roster_dict[team_member].hometown, roster_dict[team_member].home_state, roster_dict[team_member].school))
+            print('{:<25s}{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format(roster_dict[team_member].first_last, roster_dict[team_member].year, roster_dict[team_member].position, roster_dict[team_member].number, roster_dict[team_member].height, roster_dict[team_member].weight, roster_dict[team_member].hometown, roster_dict[team_member].home_state, roster_dict[team_member].school))
+
+def yearChoice(x):
+    print('{:<25s}{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format("Name", "Year", "Position", "Number", "Height", "Weight", "Hometown", "State", "School")) 
+    for team_member in roster_dict:
+        if x == roster_dict[team_member].year:
+            print('{:<25s}{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format(roster_dict[team_member].first_last, roster_dict[team_member].year, roster_dict[team_member].position, roster_dict[team_member].number, roster_dict[team_member].height, roster_dict[team_member].weight, roster_dict[team_member].hometown, roster_dict[team_member].home_state, roster_dict[team_member].school))
 
 def positionChoice(x):
-    print('{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format("Name", "Position", "Number", "Height", "Weight", "Hometown", "State", "School")) 
+    print('{:<25s}{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format("Name", "Year", "Position", "Number", "Height", "Weight", "Hometown", "State", "School")) 
     for team_member in roster_dict:
         if x == roster_dict[team_member].position:
-            print('{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format(roster_dict[team_member].first_last, roster_dict[team_member].position, roster_dict[team_member].number, roster_dict[team_member].height, roster_dict[team_member].weight, roster_dict[team_member].hometown, roster_dict[team_member].home_state, roster_dict[team_member].school)) 
+            print('{:<25s}{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format(roster_dict[team_member].first_last, roster_dict[team_member].year, roster_dict[team_member].position, roster_dict[team_member].number, roster_dict[team_member].height, roster_dict[team_member].weight, roster_dict[team_member].hometown, roster_dict[team_member].home_state, roster_dict[team_member].school))
 
 def numberChoice(x):
+    print('{:<25s}{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format("Name", "Year", "Position", "Number", "Height", "Weight", "Hometown", "State", "School")) 
     for team_member in roster_dict:
         if x == roster_dict[team_member].number:
-            print('{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format("Name", "Position", "Number", "Height", "Weight", "Hometown", "State", "School"))
+            print('{:<25s}{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format(roster_dict[team_member].first_last, roster_dict[team_member].year, roster_dict[team_member].position, roster_dict[team_member].number, roster_dict[team_member].height, roster_dict[team_member].weight, roster_dict[team_member].hometown, roster_dict[team_member].home_state, roster_dict[team_member].school))
 
 def heightChoice(x):
-    print('{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format("Name", "Position", "Number", "Height", "Weight", "Hometown", "State", "School")) 
+    print('{:<25s}{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format("Name", "Year", "Position", "Number", "Height", "Weight", "Hometown", "State", "School")) 
     for team_member in roster_dict:
         if x == roster_dict[team_member].height:
-            print('{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format(roster_dict[team_member].first_last, roster_dict[team_member].position, roster_dict[team_member].number, roster_dict[team_member].height, roster_dict[team_member].weight, roster_dict[team_member].hometown, roster_dict[team_member].home_state, roster_dict[team_member].school))
+            print('{:<25s}{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format(roster_dict[team_member].first_last, roster_dict[team_member].year, roster_dict[team_member].position, roster_dict[team_member].number, roster_dict[team_member].height, roster_dict[team_member].weight, roster_dict[team_member].hometown, roster_dict[team_member].home_state, roster_dict[team_member].school))
 
 def weightChoice(x):
-    print('{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format("Name", "Position", "Number", "Height", "Weight", "Hometown", "State", "School"))
+    print('{:<25s}{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format("Name", "Year", "Position", "Number", "Height", "Weight", "Hometown", "State", "School")) 
     for team_member in roster_dict:
-        if x == roster_dict[team_member].height:
-            print('{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format(roster_dict[team_member].first_last, roster_dict[team_member].position, roster_dict[team_member].number, roster_dict[team_member].height, roster_dict[team_member].weight, roster_dict[team_member].hometown, roster_dict[team_member].home_state, roster_dict[team_member].school))
+        if x == roster_dict[team_member].weight:
+            print('{:<25s}{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format(roster_dict[team_member].first_last, roster_dict[team_member].year, roster_dict[team_member].position, roster_dict[team_member].number, roster_dict[team_member].height, roster_dict[team_member].weight, roster_dict[team_member].hometown, roster_dict[team_member].home_state, roster_dict[team_member].school))
 
 def hometownChoice(x):
-    print('{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format("Name", "Position", "Number", "Height", "Weight", "Hometown", "State", "School"))
+    print('{:<25s}{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format("Name", "Year", "Position", "Number", "Height", "Weight", "Hometown", "State", "School")) 
     for team_member in roster_dict:
         if x == roster_dict[team_member].hometown:
-            print('{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format(roster_dict[team_member].first_last, roster_dict[team_member].position, roster_dict[team_member].number, roster_dict[team_member].height, roster_dict[team_member].weight, roster_dict[team_member].hometown, roster_dict[team_member].home_state, roster_dict[team_member].school))
+            print('{:<25s}{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format(roster_dict[team_member].first_last, roster_dict[team_member].year, roster_dict[team_member].position, roster_dict[team_member].number, roster_dict[team_member].height, roster_dict[team_member].weight, roster_dict[team_member].hometown, roster_dict[team_member].home_state, roster_dict[team_member].school))
 
 def stateChoice(x):
-    print('{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format("Name", "Position", "Number", "Height", "Weight", "Hometown", "State", "School"))
-    for team_member in roster_dict:
-        if x == roster_dict[team_member].home_state:
-            print('{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format(roster_dict[team_member].first_last, roster_dict[team_member].position, roster_dict[team_member].number, roster_dict[team_member].height, roster_dict[team_member].weight, roster_dict[team_member].hometown, roster_dict[team_member].home_state, roster_dict[team_member].school))
+    print('{:<25s}{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format("Name", "Year", "Position", "Number", "Height", "Weight", "Hometown", "State", "School")) 
+            print('{:<25s}{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format(roster_dict[team_member].first_last, roster_dict[team_member].year, roster_dict[team_member].position, roster_dict[team_member].number, roster_dict[team_member].height, roster_dict[team_member].weight, roster_dict[team_member].hometown, roster_dict[team_member].home_state, roster_dict[team_member].school))
 
 def schoolChoice(x):
-    print('{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format("Name", "Position", "Number", "Height", "Weight", "Hometown", "State", "School"))
+    print('{:<25s}{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format("Name", "Year", "Position", "Number", "Height", "Weight", "Hometown", "State", "School")) 
     for team_member in roster_dict:
         if x == roster_dict[team_member].school:
-            print('{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format(roster_dict[team_member].first_last, roster_dict[team_member].position, roster_dict[team_member].number, roster_dict[team_member].height, roster_dict[team_member].weight, roster_dict[team_member].hometown, roster_dict[team_member].home_state, roster_dict[team_member].school))
+            print('{:<25s}{:<25s}{:<25s}{:<20s}{:<20s}{:<20s}{:<20s}{:<20s}{:<12s}'.format(roster_dict[team_member].first_last, roster_dict[team_member].year, roster_dict[team_member].position, roster_dict[team_member].number, roster_dict[team_member].height, roster_dict[team_member].weight, roster_dict[team_member].hometown, roster_dict[team_member].home_state, roster_dict[team_member].school))
 

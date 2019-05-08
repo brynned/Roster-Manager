@@ -31,6 +31,7 @@ while menu_choice != 8:
     elif menu_choice == 2:
         print("Please enter the following information for the new athlete:\n")
         first_last = input("Full Name: ")
+        year = input("Year: ")
         position = input("Position Played: ")
         number = input("Jersey Number: ")
         height = input("Height: ")
@@ -38,7 +39,7 @@ while menu_choice != 8:
         hometown = input("Hometown: ")
         home_state = input("State: ")
         school = input("High School: ")
-        addAthlete(first_last, position, number, height, weight, hometown, home_state, school)
+        addAthlete(first_last, year, position, number, height, weight, hometown, home_state, school)
     elif menu_choice == 3:
         athlete_to_delete = input("Enter the name of the athlete to be removed: ")
         deleteAthlete(athlete_to_delete)

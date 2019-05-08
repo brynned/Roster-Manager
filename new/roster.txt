@@ -1,4 +1,4 @@
-Josh,OL,75,6-7,310,Wexford,PA,North Allegany
-Ian Book,QB,12,6-0,175,El Dorado Hills,CA,
-Aaron Banks,OL,69,6-6,325,,CA,
-Liam Eichenberg,OL,74,6-6,310,Westlake,OH,Saint Ignatius
+Josh,JR,OL,75,6-7,310,Wexford,PA,North Allegany
+Ian Book,SR,QB,12,6-0,175,El Dorado Hills,CA,
+Aaron Banks,JR,OL,69,6-6,325,,CA,
+Liam Eichenberg,SR,OL,74,6-6,310,Westlake,OH,Saint Ignatius

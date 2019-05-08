@@ -1,0 +1,213 @@
+from tkinter import *
+from tkinter import ttk
+#from functions import *
+#from functions2 import *
+
+roster_dict = dict()
+#roster_list = [] 
+class Athlete:
+    def __init__(self, first_last, year, position, number, height, weight, hometown, state, school):
+        self.first_last = first_last
+        self.year = year
+        self.position = position
+        self.number = number
+        self.height = height
+        self.weight = weight
+        self.hometown = hometown
+        self.state = state
+        self.school = school
+def clicked():
+   displayRoster()
+
+def displayGrid():
+    Label(tab1, text="Full name").grid(row=1, column=1)
+    Label(tab1, text="Year").grid(row=1, column=2)
+    Label(tab1, text="Position").grid(row=1, column=3)
+    Label(tab1, text="Number").grid(row=1, column=4)
+    Label(tab1, text="Height").grid(row=1, column=5)
+    Label(tab1, text="Weight").grid(row=1, column=6)
+    Label(tab1, text="Hometown").grid(row=1, column=7)
+    Label(tab1, text="State").grid(row=1, column=8)
+    Label(tab1, text="School").grid(row=1, column=9)
+
+def clear():
+    for w in tab1.winfo_children():
+        w.destroy()
+    btn1 = Button(tab1, text="Click to display roster!", command=clicked)
+    btn1.grid(column=1, row=0)
+    displayGrid()
+
+def displayRoster():
+    i = 2
+    Label(tab1, text="Full name").grid(row=1, column=1)
+    Label(tab1, text="Year").grid(row=1, column=2)
+    Label(tab1, text="Position").grid(row=1, column=3)
+    Label(tab1, text="Number").grid(row=1, column=4)
+    Label(tab1, text="Height").grid(row=1, column=5)
+    Label(tab1, text="Weight").grid(row=1, column=6)
+    Label(tab1, text="Hometown").grid(row=1, column=7)
+    Label(tab1, text="State").grid(row=1, column=8)
+    Label(tab1, text="School").grid(row=1, column=9)
+    #while i < len(roster_dict):
+    for team_member in roster_dict:
+        #while i < len(roster_dict):
+        name = Label(tab1, text=roster_dict[team_member].first_last)
+        name.grid(row=i, column=1)
+        year = Label(tab1, text=roster_dict[team_member].year)
+        year.grid(row=i, column=2)
+        position = Label(tab1, text=roster_dict[team_member].position)
+        position.grid(row=i, column=3)
+        number = Label(tab1, text=roster_dict[team_member].number)
+        number.grid(row=i, column=4)
+        height = Label(tab1, text=roster_dict[team_member].height)
+        height.grid(row=i, column=5)
+        weight = Label(tab1, text=roster_dict[team_member].weight)
+        weight.grid(row=i, column=6)
+        hometown = Label(tab1, text=roster_dict[team_member].hometown)
+        hometown.grid(row=i, column=7)
+        state = Label(tab1, text=roster_dict[team_member].state)
+        state.grid(row=i, column=8)
+        school = Label(tab1, text=roster_dict[team_member].school)
+        school.grid(row=i, column=9)
+        i = i+1
+    destroy = Button(tab1, text="Clear", command=clear)
+    destroy.grid(row=0, column = 9)
+    if len(roster_dict) is 0:
+      Label(tab1, text="The roster is currently empty").grid(row=5, column=0)
+def addAthlete(first_last, year, position, number, height, weight, hometown, state, school):
+    athlete_info = Athlete(first_last, year, position, number, height, weight, hometown, state, school)
+    roster_dict[first_last] = athlete_info
+def deleteAthlete(athlete):
+    if athlete in roster_dict:
+        del roster_dict[athlete]
+    else:
+        messagebox.showerror('Error', 'Athlete not found on team roster.')
+
+def editAthlete(athlete):
+    if athlete in roster_dict:
+        team_member = roster_dict[athlete]
+        Label(tab4, text="New Full name").grid(row=3)
+        Label(tab4, text="New Year").grid(row=4)
+        Label(tab4, text="New Position").grid(row=5)
+        Label(tab4, text="New Number").grid(row=6)
+        Label(tab4, text="New Height").grid(row=7)
+        Label(tab4, text="New Weight").grid(row=8)
+        Label(tab4, text="New Hometown").grid(row=9)
+        Label(tab4, text="New State").grid(row=10)
+        Label(tab4, text="New School").grid(row=11)
+        e42 = Entry(tab4, width=10).grid(column=1, row=3)
+        e43 = Entry(tab4, width=10).grid(column=1, row=4)
+        e44 = Entry(tab4, width=10).grid(column=1, row=5)
+        team_member.number = Entry(tab4, width=10).grid(column=1, row=6)
+        team_member.height = Entry(tab4, width=10).grid(column=1, row=7)
+        team_member.weight = Entry(tab4, width=10).grid(column=1, row=8)
+        team_member.hometown = Entry(tab4, width=10).grid(column=1, row=9)
+        team_member.state = Entry(tab4, width=10).grid(column=1, row=10)
+        team_member.school = Entry(tab4, width=10).grid(column=1, row=11)
+        def editClick():
+            label = Label(tab4, text="Information Updated!")
+            label.grid(row=13, column=2)
+        btn5 = Button(tab4, text="Enter", command=editClick)
+        btn5.grid(column=2, row=12)
+        team_member.first_last = e42.get()
+        team_member.year = e43.get()
+        team_member.position = e44.get()
+        del roster_dict[athlete]
+        roster_dict[team_member.first_last] = team_member
+
+window = Tk()
+window.title("Welcome to the Roster Manager")
+#window.geometry('350x200')
+tab_control = ttk.Notebook(window)
+tab1 = ttk.Frame(tab_control)
+tab2 = ttk.Frame(tab_control)
+tab3 = ttk.Frame(tab_control)
+tab4 = ttk.Frame(tab_control)
+tab5 = ttk.Frame(tab_control)
+tab6 = ttk.Frame(tab_control)
+tab7 = ttk.Frame(tab_control)
+tab_control.add(tab1, text="Display Roster")
+tab_control.add(tab2, text="Add Athlete")
+tab_control.add(tab3, text="Delete Athlete")
+tab_control.add(tab4, text="Edit Athlete")
+tab_control.add(tab6, text="Save Data")
+tab_control.add(tab6, text="Load Data")
+tab_control.add(tab7, text="Search")
+tab_control.add(tab2, text="Add Athlete")
+lbl = Label(tab1, text="Display Roster")
+lbl.grid(column=0, row=0)
+Label(tab2, text="Full name").grid(row=0)
+Label(tab2, text="Year").grid(row=1)
+Label(tab2, text="Position").grid(row=2)
+Label(tab2, text="Number").grid(row=3)
+Label(tab2, text="Height").grid(row=4)
+Label(tab2, text="Weight").grid(row=5)
+Label(tab2, text="Hometown").grid(row=6)
+Label(tab2, text="State").grid(row=7)
+Label(tab2, text="School").grid(row=8)
+e1 = Entry(tab2, width=10)
+e2 = Entry(tab2, width=10)
+e3 = Entry(tab2, width=10)
+e4 = Entry(tab2, width=10)
+e5 = Entry(tab2, width=10)
+e6 = Entry(tab2, width=10)
+e7 = Entry(tab2, width=10)
+e8 = Entry(tab2, width=10)
+e9 = Entry(tab2, width=10)
+e1.grid(row=0, column=1)
+e2.grid(row=1, column=1)
+e3.grid(row=2, column=1)
+e4.grid(row=3, column=1)
+e5.grid(row=4, column=1)
+e6.grid(row=5, column=1)
+e7.grid(row=6, column=1)
+e8.grid(row=7, column=1)
+e9.grid(row=8, column=1)
+
+# Tab 3
+Label(tab3, text="Enter the name of the athlete to delete:").grid(row=0)
+e31 = Entry(tab3, width=10)
+e31.grid(row=0, column=1)
+
+# Tab 4
+Label(tab4, text="Enter the name of the athlete to edit:").grid(row=0)
+e41 = Entry(tab4, width=10)
+e41.grid(row=0, column=1)
+def clicked2():
+    name = e1.get()
+    year = e2.get()
+    position = e3.get()
+    number = e4.get()
+    height = e5.get()
+    weight = e6.get()
+    hometown = e7.get()
+    state = e8.get()
+    school = e9.get()
+    addAthlete(name, year, position, number, height, weight, hometown, state, school)
+    e1.delete(0, END)
+    e2.delete(0, END)
+    e3.delete(0, END)    
+    e4.delete(0, END)
+    e5.delete(0, END)
+    e6.delete(0, END)
+    e7.delete(0, END)
+    e8.delete(0, END)
+    e9.delete(0, END)
+def clicked3():
+    athlete = e31.get()
+    deleteAthlete(athlete)
+    e31.delete(0, END)
+def clicked4():
+    athlete = e41.get()
+    editAthlete(athlete)
+    e41.delete(0, END)
+btn1 = Button(tab1, text="Click to display roster!", command=clicked)
+btn1.grid(column=1, row=0)
+btn2 = Button(tab2, text="Enter", command=clicked2)
+btn2.grid(column=1, row=9)
+btn3 = Button(tab3, text="Enter", command=clicked3)
+btn3.grid(column=1, row=1)
+btn4 = Button(tab4, text="Enter", command=clicked4)
+btn4.grid(column=1, row=1)
+tab_control.pack(expand=1, fill='both')
+window.mainloop()
